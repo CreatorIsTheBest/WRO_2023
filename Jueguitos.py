@@ -3,19 +3,20 @@ import random
 
 # funcion numero random
 
-acertado = False
+
 Intentos =  0
 
 def crear_un_numero_aleatorio():
-    return random.random(0,100)
+    return random.randrange(0,100)
 
 # funcion principal
 
 
 def main():
+    acertado = False
     Numero_secreto = crear_un_numero_aleatorio()
     while acertado == False:
-        Respuesta = input("¿Cual es el nuemro?: ")
+        Respuesta = int(input("¿Cual es el nuemro?: "))
         if Respuesta >= Numero_secreto:
             print("Mas pequeño")
             Intentos = Intentos + 1
