@@ -14,8 +14,8 @@ def crear_un_numero_aleatorio():
 
 def main():
     Numero_secreto = crear_un_numero_aleatorio()
-    Respuesta = input("¿Cual es el nuemro?: ")
     while acertado == False:
+        Respuesta = input("¿Cual es el nuemro?: ")
         if Respuesta >= Numero_secreto:
             print("Mas pequeño")
             Intentos = Intentos + 1
