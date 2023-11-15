@@ -22,7 +22,7 @@ def main():
         elif Respuesta <= Numero_secreto:
             print("Mas Grande")
             Intentos = Intentos + 1
-        elif Respuesta == Numero_secreto:
+        else:
             print("Correcto!!!!!")
             acertado = True
             if input("¿Quieres volver a jugar (y/n)?") == "y":
