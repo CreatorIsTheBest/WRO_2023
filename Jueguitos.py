@@ -19,10 +19,10 @@ def main():
         if Respuesta >= Numero_secreto:
             print("Mas pequeño")
             Intentos = Intentos + 1
-        if Respuesta <= Numero_secreto:
+        elif Respuesta <= Numero_secreto:
             print("Mas Grande")
             Intentos = Intentos + 1
-        if Respuesta == Numero_secreto:
+        elif Respuesta == Numero_secreto:
             print("Correcto!!!!!")
             acertado = True
             if input("¿Quieres volver a jugar (y/n)?") == "y":
