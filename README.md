@@ -1,60 +1,58 @@
+Robot with Arduino, Raspberry Pi and Computer Vision using TensorFlow and OpenCV
+This project details the creation of a robot controlled by Arduino and Raspberry Pi, equipped with 4 sensors, 2 DC motors, an L298N board, and programmed with TensorFlow and OpenCV on Raspberry Pi OS (previously Raspbian). The robot is powered by two 3.7V 18650 batteries connected to a battery holder.
 
-Robot con Arduino, Raspberry Pi y Visión por Computadora usando TensorFlow y OpenCV
-Este proyecto detalla la creación de un robot controlado por Arduino y Raspberry Pi, equipado con 4 sensores, 2 motores DC, una placa L298N, y programado con TensorFlow y OpenCV en Raspberry Pi OS (anteriormente Raspbian). El robot está alimentado por dos pilas 18650 de 3.7V conectadas en un portapilas.
-
-Componentes Utilizados
+Components Used
 Arduino Uno
-Raspberry Pi (modelos compatibles)
-4 Sensores (por ejemplo, sensores ultrasónicos)
-2 Motores DC
-Placa controladora de motores L298N
-Portapilas para 2 pilas 18650
-Cámara compatible con Raspberry Pi (por ejemplo, Pi Camera)
-Conexiones Físicas
-Arduino Uno y Raspberry Pi:
+Raspberry Pi (supported models)
+4 Sensors (e.g. ultrasonic sensors)
+2 DC Motors
+L298N motor controller board
+Battery holder for 2 18650 batteries
+Raspberry Pi compatible camera (e.g. Pi Camera)
+Physical Connections
+Arduino Uno and Raspberry Pi:
 
-Conectar la Raspberry Pi y el Arduino Uno mediante un cable USB.
-Sensores:
+Connect the Raspberry Pi and the Arduino Uno using a USB cable.
+Sensors:
 
-Conectar los sensores a los pines digitales o analógicos del Arduino Uno.
-Motores DC:
+Connect the sensors to the digital or analog pins of the Arduino Uno.
+DC Motors:
 
-Conectar los motores DC a los puertos de salida de la placa L298N.
+Connect the DC motors to the output ports of the L298N board.
 L298N:
 
-Conectar la placa L298N al Arduino Uno:
-IN1 al Pin 2
-IN2 al Pin 3
-IN3 al Pin 4
-IN4 al Pin 5
-Conectar los pines ENA y ENB a los pines PWM del Arduino Uno.
-Cámara:
+Connect the L298N board to the Arduino Uno:
+IN1 to Pin 2
+IN2 to Pin 3
+IN3 to Pin 4
+IN4 to Pin 5
+Connect the ENA and ENB pins to the PWM pins of the Arduino Uno.
+Camera:
 
-Conectar la cámara compatible con Raspberry Pi al puerto de cámara de la Raspberry Pi.
-Alimentación:
+Connect the Raspberry Pi compatible camera to the camera port of the Raspberry Pi.
+Feeding:
 
-Conectar las dos pilas 18650 en el portapilas y conectar la salida a la entrada de alimentación de la placa L298N.
-Instalación de Software
+Connect the two 18650 batteries into the battery holder and connect the output to the power input of the L298N board.
+Software installation
 Raspberry Pi (Raspberry Pi OS):
 
-Instalar TensorFlow y OpenCV en Raspberry Pi siguiendo las instrucciones oficiales.
-Asegúrate de tener las librerías necesarias para controlar los sensores y motores DC.
+Install TensorFlow and OpenCV on Raspberry Pi following the official instructions.
+Make sure you have the necessary libraries to control the sensors and DC motors.
 Arduino Uno:
 
-Cargar el código necesario para leer los datos de los sensores y controlar los motores DC.
-Ejecución del Proyecto
-Conectar todas las piezas físicas según las conexiones descritas anteriormente.
-Encender la Raspberry Pi y asegurarse de que esté conectada a la red.
-Ejecutar el script de Python que contiene el modelo de TensorFlow para procesar imágenes de la cámara y tomar decisiones basadas en la visión.
-Observar cómo el robot se mueve y reacciona según las imágenes captadas por la cámara y procesadas por TensorFlow y OpenCV.
-Ajustar el código según sea necesario para mejorar el rendimiento y la funcionalidad del robot.
-Notas Adicionales
-Asegúrate de tener las librerías necesarias instaladas en la Raspberry Pi para trabajar con TensorFlow, OpenCV, y para controlar los sensores y motores DC.
-Puedes ajustar y personalizar el código para implementar diferentes comportamientos basados en la visión del robot.
-Recuerda tener en cuenta las consideraciones de seguridad al trabajar con motores y componentes eléctricos.
-Este es un proyecto básico para demostrar la integración de varios componentes. Se pueden agregar más sensores, actuadores y funciones para ampliar las capacidades del robot.
-Este README proporciona una visión general del proyecto del robot con Arduino, Raspberry Pi, TensorFlow y OpenCV. Para detalles específicos de código y configuración, por favor, consulte los archivos y documentación correspondientes en el repositorio del proyecto.
-
+Load the code necessary to read the sensor data and control the DC motors.
+Project execution
+Connect all physical parts according to the connections described above.
+Turn on the Raspberry Pi and make sure it is connected to the network.
+Run the Python script containing the TensorFlow model to process camera images and make vision-based decisions.
+Observe how the robot moves and reacts according to the images captured by the camera and processed by TensorFlow and OpenCV.
+Adjust the code as necessary to improve the performance and functionality of the robot.
+Additional notes
+Make sure you have the necessary libraries installed on the Raspberry Pi to work with TensorFlow, OpenCV, and to control the sensors and DC motors.
+You can adjust and customize the code to implement different behaviors based on the robot's vision.
+Remember to keep safety considerations in mind when working with motors and electrical components.
+This is a basic project to demonstrate the integration of various components. More sensors, actuators, and functions can be added to expand the robot's capabilities.
+This README provides an overview of the robot project with Arduino, Raspberry Pi, TensorFlow and OpenCV. For specific code and configuration details, please refer to the corresponding files and documentation in the project repository.
 
 
 
